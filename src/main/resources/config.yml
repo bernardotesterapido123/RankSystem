@@ -1,0 +1,14 @@
+ranks:
+  membro:
+    prefix: "&7[Membro]"
+    permissions: []
+
+  vip:
+    prefix: "&a[VIP]"
+    permissions:
+      - "vip.fly"
+
+  admin:
+    prefix: "&c[ADMIN]"
+    permissions:
+      - "*"
