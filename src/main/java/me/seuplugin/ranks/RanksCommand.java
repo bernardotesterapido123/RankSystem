@@ -13,9 +13,12 @@ public class RanksCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (sender instanceof Player player) {
+
+        if (sender instanceof Player) {
+            Player player = (Player) sender;
             player.openInventory(menu.getMenu());
         }
+
         return true;
     }
 }
