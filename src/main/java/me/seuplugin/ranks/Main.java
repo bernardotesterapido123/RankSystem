@@ -17,7 +17,7 @@ public class Main extends JavaPlugin {
         getCommand("ranks").setExecutor(new RanksCommand(rankManager));
 
         getServer().getPluginManager().registerEvents(new ChatListener(rankManager), this);
-        getServer().getPluginManager().registerEvents(new GUIListener(rankManager), this);
+        getServer().getPluginManager().registerEvents(new GUIListener(), this);
         getServer().getPluginManager().registerEvents(new RanksListener(rankManager), this);
         getServer().getPluginManager().registerEvents(new PermissionListener(rankManager), this);
 
